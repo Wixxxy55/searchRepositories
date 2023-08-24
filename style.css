@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./font/Roboto-Regular.ttf);
+}
+
+body {
+    background-color: #C4C4C4;
+    font-family: "Roboto";
+}
+
+.app { 
+    margin-top: 50px;
+    padding: 0 25px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.search-input {
+    font-family: "Roboto";
+    font-size: 48px;
+    background-color: #fff;
+    border-color: white;
+    outline:none
+}
+
+.search-list {
+    display: flex;
+    flex-direction: column;
+    top: 61px;
+    margin: 0 auto;
+    padding: 0;
+    width: 500px;
+    z-index: 2;
+    list-style: none;
+    font-family: "Roboto";
+}
+
+.search__list-item {
+    min-height: 44px;
+    padding: 0 13px;
+    border: 2px solid #000;
+    background: #E3E3E3;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.search__list-item:hover {
+    background-color: #65CDF9;
+}
+
+
+.repositories {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.repositories-list {
+    position: relative;
+    padding: 16px 8px;
+    border: 1px solid #000;
+    background-color: #E27BEB;
+    list-style: none;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+
+.repositories__list-item {
+    position: relative;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.repositories__btn {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 34px;
+    background-image: url(images/Vector\ 7.svg), url(images/Vector\ 8.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000;
+}
